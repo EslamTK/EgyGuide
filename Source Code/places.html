@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title id="pagetitle">Id</title>
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+
+    <!-- load theme file for your application -->
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="setPageTitle.js"></script>
+</head>
+
+<body>
+    <!-- Main App Page -->
+    <div id="sectionChangerPage" class="ui-page" data-enable-page-scroll="false">
+
+        <div id="pageIndicator" class="ui-page-indicator"></div>
+        <div id="hsectionchanger" class="ui-content">
+            <div id="sections" style="text-align:center;" class="containerCenter">
+                <section class="ui-section-active" id="deleteMe">
+                    <div class="ui-processing-text containerCenter">
+                        Loading Places...
+                    </div>
+            <div class="ui-processing ui-processing-full-size"></div>
+            </section>
+        </div>
+    </div>
+    <script src="js/places.js"></script>
+    </div>
+
+    <script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+    <script type="text/javascript" src="js/circle-helper.js"></script>
+    <script src="app.js"></script>
+    <script src="lowBatteryCheck.js"></script>
+</body>
+
+</html>

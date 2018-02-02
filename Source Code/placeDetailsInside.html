@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title id="pagetitle">Id</title>
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+    <!-- load theme file for your application -->
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="setPageTitle.js"></script>
+</head>
+
+<body>
+    <!-- Main App Page -->
+    <div id="pageInside" class="ui-page">
+
+        <header class="ui-header">
+            <h1 class="ui-title" id="placeTitle1" style="font-size:.6em;text-align:center;">Loading</h1>
+        </header>
+
+        <div id="mainsec" class="ui-content content-padding" style="text-align:center;">
+            <div id="mainContent" style="display:none;">
+                <img alt="place Photo" id="placeImage1" class="largeThumbnail">
+                <p id="placeDescription1" style="font-size:.7em;padding:10px;line-height: 1.4;"></p>
+                <a herf="#" id="placeLocation"></a>
+            </div>
+            <div id="deleteMe1">
+                <div class="ui-processing-text containerCenter">
+                    Loading Details...
+                </div>
+                <div class="ui-processing ui-processing-full-size"></div>
+            </div>
+        </div>
+        <footer class="ui-footer ui-bottom-button">
+            <a href="locationMap.html" class="ui-btn" id="locBtn1" style="display:none;">Location</a>
+        </footer>
+        <script src="js/placeDetailsInside.js"></script>
+    </div>
+
+
+    <script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+    <script type="text/javascript" src="js/circle-helper.js"></script>
+    <script src="app.js"></script>
+    <script src="lowBatteryCheck.js"></script>
+</body>
+
+</html>

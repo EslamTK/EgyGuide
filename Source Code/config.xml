@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://Master/EgyGuide" version="1.0.0" viewmodes="maximized">
+    <access origin="https://travel-guide-30f0d.firebaseio.com" subdomains="true"></access>
+    <access origin="https://firebasestorage.googleapis.com" subdomains="true"></access>
+    <access origin="http://maps.googleapis.com" subdomains="true"></access>
+    <tizen:application id="u386wshOtl.EgyGuide" package="u386wshOtl" required_version="2.3.2"/>
+    <author email="eslamstm1@gmail.com">Eslam Tarek</author>
+    <content src="index.html"/>
+    <description>Travel Guide To Popular Egypt Cites And Places To Visit.</description>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="tizen.org/feature/network.internet"/>
+    <icon src="pyramids.png"/>
+    <name>EgyGuide</name>
+    <tizen:privilege name="http://tizen.org/privilege/download"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+    <tizen:setting hwkey-event="enable"/>
+</widget>

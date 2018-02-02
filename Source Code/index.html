@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <title>Egypt Travel Guide</title>
+    <link rel="stylesheet" href="lib/tau/wearable/theme/default/tau.min.css">
+    <link rel="stylesheet" media="all and (-tizen-geometric-shape: circle)" href="lib/tau/wearable/theme/default/tau.circle.min.css">
+    <!-- load theme file for your application -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Main App Page -->
+    <div class="ui-page ui-page-active" id="main">
+        <header class="ui-header">
+            <h1 class="ui-title" style="font-size:.7em;text-align:center;">Egypt Travel Guide</h1>
+        </header>
+        <div class="ui-content">
+            <ul class="ui-listview" style="text-align:center;">
+                <li><a href="places.html?id=Popular">Popular</a>
+                </li>
+                <li><a href="places.html?id=Historical">Historical</a>
+                </li>
+                <li><a href="places.html?id=Museums">Museums</a>
+                </li>
+                <li><a href="places.html?id=Cities">Cities</a>
+                </li>
+                <li><a href="places.html?id=Mosques">Mosques</a>
+                </li>
+                <li><a href="places.html?id=Castles">Castles</a>
+                </li>
+                <li><a href="places.html?id=Beaches">Beaches &amp; Diving</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/firebase.js"></script>
+    <script type="text/javascript">
+        var config = {
+            apiKey: "AIzaSyBJcjSgR9l9aO-wF1XDkkIpiM7RmO486F8",
+            authDomain: "travel-guide-30f0d.firebaseapp.com",
+            databaseURL: "https://travel-guide-30f0d.firebaseio.com",
+            storageBucket: "travel-guide-30f0d.appspot.com",
+            messagingSenderId: "918108362554"
+          };
+          firebase.initializeApp(config);
+    </script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+    <script type="text/javascript" src="js/circle-helper.js"></script>
+    <script src="lowBatteryCheck.js"></script>
+</body>
+
+</html>
